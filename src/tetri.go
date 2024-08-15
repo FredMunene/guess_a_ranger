@@ -2,6 +2,7 @@ package src
 
 import "fmt"
 
+//GetTetromino retrieves tetrominos from a slice of string
 func GetTetromino(tetrimino []string)([][]string,error){
 	allTetrimino := [][]string{}
 	cube := []string{}
@@ -11,7 +12,6 @@ func GetTetromino(tetrimino []string)([][]string,error){
 		} else {
 			ok, _ := ValidTetrimino(cube)
 			if !ok {
-				//println("ERROR")
 				return nil,fmt.Errorf(errMessage)
 			}
 			allTetrimino = append(allTetrimino, cube)

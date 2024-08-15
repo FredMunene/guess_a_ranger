@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 )
-
+//ReadFile retrieves data from the path provided
 func ReadFile(path string) ([]string, error) {
 	fileContents, err := os.ReadFile(path)
 	if err != nil {
