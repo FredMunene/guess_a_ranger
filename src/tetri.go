@@ -20,3 +20,8 @@ func GetTetromino(tetrimino []string)([][]string,error){
 	}
 	return allTetrimino,nil
 }
+
+func CreateBoard(height int) []string{
+	board := make([]string,height)
+	return board
+}
