@@ -22,6 +22,14 @@ func GetTetromino(tetrimino []string)([][]string,error){
 }
 
 func CreateBoard(height int) []string{
-	board := make([]string,height)
+	board := []string{}
+
+	for i := 0; i < height; i++ {
+		line := ""
+		for j := 0 ; j < height; j++ {
+			line += "."
+		}
+		board = append(board,line )
+	}
 	return board
 }
