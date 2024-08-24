@@ -41,12 +41,6 @@ func ResizeTetri(cube []string) []string {
 			break
 		}
 	}
-
-	// for _, line := range newCube {
-	// 	println(line)
-	// }
-	// println(len(newCube))
-
 	return newCube
 }
 
@@ -66,6 +60,5 @@ func isColumnEmpty(cube []string, colNum int) bool {
 	for row := 0; row < len(cube); row++ {
 		col += (string(cube[row][colNum]))
 	}
-	// println(col)
 	return isRowEmpty(col)
 }
