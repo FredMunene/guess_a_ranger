@@ -10,7 +10,7 @@ import (
 func main() {
 	// handle no of arguments
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: go run . [FILE_PATH]\n\nEX: go run . templates/text1.txt")
+		fmt.Println("Usage: go run . [FILE_PATH]\n\nEX: go run . text1.txt")
 		return
 	}
 	filePath := os.Args[1]
